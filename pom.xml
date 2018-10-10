@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <groupId>com.whizzcode</groupId>
+    <artifactId>poker</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>data</module>
+        <module>business</module>
+        <module>application</module>
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.4.RELEASE</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+
+        <module.business.version>1.0.0-SNAPSHOT</module.business.version>
+        <module.data.version>1.0.0-SNAPSHOT</module.data.version>
+
+        <dependency.log4j-api.version>2.11.0</dependency.log4j-api.version>
+        <dependency.jackson-databind.version>2.9.5</dependency.jackson-databind.version>
+        <dependency.truth.version>0.40</dependency.truth.version>
+        <dependency.h2.version>1.4.197</dependency.h2.version>
+        <dependency.jooq.version>3.11.5</dependency.jooq.version>
+
+        <plugin.maven-surefire-plugin.version>2.22.0</plugin.maven-surefire-plugin.version>
+        <plugin.maven-checkstyle-plugin.version>3.0.0</plugin.maven-checkstyle-plugin.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.whizzcode</groupId>
+                <artifactId>business</artifactId>
+                <version>${module.business.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.whizzcode</groupId>
+                <artifactId>data</artifactId>
+                <version>${module.data.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${dependency.log4j-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${dependency.jackson-databind.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq</artifactId>
+                <version>${dependency.jooq.version}</version>
+            </dependency>
+
+            <!--TEST-->
+            <dependency>
+                <groupId>com.google.truth</groupId>
+                <artifactId>truth</artifactId>
+                <version>${dependency.truth.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${plugin.maven-surefire-plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
