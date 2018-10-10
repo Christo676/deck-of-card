@@ -1,0 +1,6 @@
+com\whizzcode\application\dto\CardDto.class
+com\whizzcode\application\Application.class
+com\whizzcode\application\controller\v1\PokerController.class
+com\whizzcode\application\mapper\CardMapper.class
+com\whizzcode\application\handler\RestExceptionHandler.class
+com\whizzcode\application\handler\RestExceptionHandler$ErrorDetails.class

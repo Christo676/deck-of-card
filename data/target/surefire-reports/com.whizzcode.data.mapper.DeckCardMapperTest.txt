@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.whizzcode.data.mapper.DeckCardMapperTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.whizzcode.data.mapper.DeckCardMapperTest

@@ -1,0 +1,4 @@
+com\whizzcode\application\controller\v1\PokerControllerTest.class
+com\whizzcode\application\integration\IntegrationTest.class
+com\whizzcode\application\handler\RestExceptionHandlerTest.class
+com\whizzcode\application\mapper\CardMapperTest.class

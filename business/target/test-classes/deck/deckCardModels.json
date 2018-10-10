@@ -1,0 +1,26 @@
+[
+  {
+    "deckId": 1,
+    "cardId": 1,
+    "position": 1,
+    "drawn": false
+  },
+  {
+    "deckId": 1,
+    "cardId": 2,
+    "position": 2,
+    "drawn": false
+  },
+  {
+    "deckId": 1,
+    "cardId": 3,
+    "position": 3,
+    "drawn": false
+  },
+  {
+    "deckId": 1,
+    "cardId": 4,
+    "position": 4,
+    "drawn": false
+  }
+]
