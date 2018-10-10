@@ -14,6 +14,14 @@ Java 8
 mvn clean install
 ```
 
+## Endpoints
+
+```
+POST localhost:8082/api/v1/poker/decks
+PUT localhost:8082/api/v1/poker/decks/1/shuffle
+PUT localhost:8082/api/v1/poker/decks/1/cards/draw
+```
+
 ## Built With
 
 * Spring Boot
