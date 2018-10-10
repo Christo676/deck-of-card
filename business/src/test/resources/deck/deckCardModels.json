@@ -22,5 +22,23 @@
     "cardId": 4,
     "position": 4,
     "drawn": false
+  },
+  {
+    "deckId": 1,
+    "cardId": 5,
+    "position": 5,
+    "drawn": false
+  },
+  {
+    "deckId": 1,
+    "cardId": 6,
+    "position": 6,
+    "drawn": false
+  },
+  {
+    "deckId": 1,
+    "cardId": 7,
+    "position": 7,
+    "drawn": false
   }
 ]
