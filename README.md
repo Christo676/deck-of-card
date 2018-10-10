@@ -18,8 +18,8 @@ mvn clean install
 
 ```
 POST localhost:8082/api/v1/poker/decks
-PUT localhost:8082/api/v1/poker/decks/1/shuffle
-PUT localhost:8082/api/v1/poker/decks/1/cards/draw
+PUT localhost:8082/api/v1/poker/decks/{deckId}/shuffle
+PUT localhost:8082/api/v1/poker/decks/{deckId}/cards/draw
 ```
 
 ## Built With
